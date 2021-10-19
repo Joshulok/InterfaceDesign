@@ -55,7 +55,7 @@ public class ViewController {
     	
     	ViewBurguersController controller = (ViewBurguersController) fxmlLoader.getController();
     	controller.setPedido(pedido);
-    	System.out.println(pedido.toString());
+    	//System.out.println(pedido.toString());
     	
     }//Burguers
 
@@ -70,7 +70,7 @@ public class ViewController {
     	
     	ViewDrinksController controller = (ViewDrinksController) fxmlLoader.getController();
     	controller.setPedido(pedido);
-    	System.out.println(pedido.toString());
+    	//System.out.println(pedido.toString());
     	
     }//Drinks
     
