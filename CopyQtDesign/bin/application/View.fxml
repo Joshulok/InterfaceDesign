@@ -14,6 +14,6 @@
       <TextField fx:id="userName" layoutX="220.0" layoutY="189.0" promptText="User name" style="-fx-background-color: black; -fx-border-color: grey;" />
       <PasswordField fx:id="passWord" layoutX="220.0" layoutY="224.0" promptText="Password" style="-fx-background-color: black; -fx-border-color: grey;" />
       <Button layoutX="277.0" layoutY="281.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="Login" />
-      <ComboBox fx:id="cbIdioma" layoutX="226.0" layoutY="109.0" onAction="#selection" prefWidth="150.0" promptText="Español" style="-fx-background-color: grey;" />
+      <ComboBox fx:id="cbIdioma" layoutX="226.0" layoutY="109.0" onMouseClicked="#selection" prefWidth="150.0" promptText="Español" style="-fx-background-color: grey;" />
    </children>
 </AnchorPane>
