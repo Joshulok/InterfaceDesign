@@ -26,6 +26,6 @@
       		}
 	 	]]>
       </fx:script>
-      <Label layoutX="131.0" layoutY="350.0" text="" textFill="WHITE" />
+      
    </children>
 </AnchorPane>
