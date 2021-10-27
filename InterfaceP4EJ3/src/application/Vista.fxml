@@ -7,25 +7,45 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
    <children>
       <Label layoutX="131.0" layoutY="193.0" text="Usuario:" textFill="WHITE" />
       <Label layoutX="121.0" layoutY="228.0" text="Contraseña:" textFill="WHITE" />
       <TextField fx:id="userName" layoutX="220.0" layoutY="189.0" promptText="User name" style="-fx-background-color: black; -fx-border-color: grey;" />
-      <PasswordField fx:id="passWord" layoutX="220.0" layoutY="224.0" promptText="Password" style="-fx-background-color: black; -fx-border-color: grey;" />
+      <PasswordField fx:id="passWord" layoutX="220.0" layoutY="224.0"  promptText="Password" style="-fx-background-color: black; -fx-border-color: grey;" />
       <Button layoutX="277.0" layoutY="281.0" mnemonicParsing="false" onAction="onClick()" style="-fx-background-color: grey;" text="Login" />
-      <ComboBox fx:id="cbIdioma" layoutX="226.0" layoutY="109.0" onMouseClicked="#selection" prefWidth="150.0" promptText="Español" style="-fx-background-color: grey;" />
+      <ComboBox fx:id="cbIdioma" layoutX="226.0" layoutY="109.0" onAction="language()" onMouseClicked="#selection" prefWidth="150.0" promptText="Español" style="-fx-background-color: grey;" />
+      <Label fx:id="labelScript" layoutX="285.0" layoutY="339.0" textFill="WHITE" />
       <fx:script>
       <![CDATA[
       	function onClick() {
       	
       		if (userName.getText() === "" && passWord.getText() === "") {
       			
-      			labelJavascript.setText("Introduce un usuario y contraseña")
+      			labelScript.setText("Introduce un usuario y contraseña");
       		
       		}
+      		
+      	function language() {
+      		
+      		var language = cbIdioma.getValue()
+      		
+      		if (language == "Español") {
+      			userName.setPromptText("Usuario");
+      			passWord.setPromtText("Contraseña");
+      		} else if (language == "Inglés") {
+      			userName.setPromptText("User");
+      			passWord.setPromtText("Password");
+      		} else if (language == "Alemán") {
+      			userName.setPromptText("Nutzername");
+      			passWord.setPromtText("Passwort");
+      		} else if (languaje == "Klingon") {
+      			userName.setPromptText("gho");
+      			passWord.setPromtText("polonyuS");
+      		}
+      	
+      	}
 	 	]]>
       </fx:script>
-      
    </children>
 </AnchorPane>

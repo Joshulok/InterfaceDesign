@@ -5,12 +5,16 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 
 public class ViewController {
+	
+	@FXML
+	private Label labelScript;
 
     @FXML
     private ResourceBundle resources;
@@ -30,6 +34,7 @@ public class ViewController {
     @FXML
     void selection(MouseEvent event) {
     	cbIdioma.getItems().addAll("Español", "Inglés", "Alemán", "Klingon");
+    	
     }
 
     @FXML

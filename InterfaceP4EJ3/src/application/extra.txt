@@ -1,0 +1,13 @@
+      <?language javascript?>
+      onAction="onClick()"
+      <fx:script>
+      <![CDATA[
+      	function onClick() {
+      	
+      		if (userName.getText() === "" && passWord.getText() === "") {
+      			
+      			labelScript.setText("Introduce un usuario y contraseña")
+      		
+      		}
+	 	]]>
+      </fx:script>
