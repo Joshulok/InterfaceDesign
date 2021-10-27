@@ -14,6 +14,12 @@ import javafx.scene.input.MouseEvent;
 public class ViewController {
 	
 	@FXML
+	private Label labelUser;
+	
+	@FXML
+	private Label labelPass;
+	
+	@FXML
 	private Label labelScript;
 
     @FXML
