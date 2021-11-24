@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <top>
+      <MenuBar style="-fx-background-color: #BBA2FF#BBA2FF;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Nuevo">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@notas.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Abrir">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Guardar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Guardar como">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@download.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Salir">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edición">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Copiar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@copy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Pegar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@paste.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Cortar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cut.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@information-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Escribe aquí" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="DIN Alternate Bold" size="13.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TextArea>
+   </center>
+   <right>
+      <ToolBar orientation="VERTICAL" prefHeight="373.0" prefWidth="20.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@notas.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="20.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@folder.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="20.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@save.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="20.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cut.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="20.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@copy.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="20.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@paste.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="20.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+         </items>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ToolBar>
+   </right>
+   <bottom>
+      <ToolBar prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #BBA2FF#BBA2FF #BBA2FF#BBA2FF;" BorderPane.alignment="CENTER">
+         <items>
+            <Label text="File name" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@save.png" />
+               </image>
+            </ImageView>
+         </items></ToolBar>
+   </bottom>
+</BorderPane>
