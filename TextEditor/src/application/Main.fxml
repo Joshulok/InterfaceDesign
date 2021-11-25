@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <top>
       <MenuBar style="-fx-background-color: #BBA2FF#BBA2FF;" BorderPane.alignment="CENTER">
         <menus>
@@ -216,7 +216,7 @@
       <ToolBar prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #BBA2FF#BBA2FF #BBA2FF#BBA2FF;" BorderPane.alignment="CENTER">
          <items>
             <Label fx:id="labelFileName" text="File name" />
-            <Button fx:id="barraAbajoGuardar" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#guardar" style="-fx-background-color: pink;" text="barra">
+            <Button fx:id="barraAbajoGuardar" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" disable="true" graphicTextGap="0.0" mnemonicParsing="false" onAction="#guardar" style="-fx-background-color: pink;" text="barra">
                <graphic>
                   <ImageView fitHeight="15.0" fitWidth="15.0" onMouseClicked="#abrirArchivo" pickOnBounds="true" preserveRatio="true">
                      <image>
