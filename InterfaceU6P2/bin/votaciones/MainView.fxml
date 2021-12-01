@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votaciones.MainViewController" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votaciones.MainViewController">
+   <children>
+      <Label layoutX="193.0" layoutY="74.0" text="Votaciones anónimas">
+         <font>
+            <Font name="DIN Alternate Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnP1" layoutX="63.0" layoutY="237.0" mnemonicParsing="false" onAction="#votar" style="-fx-background-color: #cb8def;" text="P1">
+         <tooltip>
+            <Tooltip fx:id="tpP1" text="Votar al Partido 1">
+               <font>
+                  <Font name="DIN Alternate Bold" size="13.0" />
+               </font>
+            </Tooltip>
+         </tooltip></Button>
+      <Button fx:id="btnP6" layoutX="497.0" layoutY="237.0" mnemonicParsing="false" onAction="#votar" style="-fx-background-color: #65f774;" text="P6">
+         <tooltip>
+            <Tooltip fx:id="tpP6" text="Votar al partido 6">
+               <font>
+                  <Font name="DIN Alternate Bold" size="13.0" />
+               </font>
+            </Tooltip>
+         </tooltip></Button>
+      <Button fx:id="btnP5" layoutX="408.0" layoutY="237.0" mnemonicParsing="false" onAction="#votar" style="-fx-background-color: #ead779;" text="P5">
+         <tooltip>
+            <Tooltip fx:id="tpP5" text="Votar al partido 5" />
+         </tooltip></Button>
+      <Button fx:id="btnP4" layoutX="325.0" layoutY="237.0" mnemonicParsing="false" onAction="#votar" style="-fx-background-color: #7bedeb;" text="P4">
+         <tooltip>
+            <Tooltip fx:id="tpP4" text="Votar al partido 4" />
+         </tooltip></Button>
+      <Button fx:id="btnP3" layoutX="238.0" layoutY="237.0" mnemonicParsing="false" onAction="#votar" style="-fx-background-color: #7a8def;" text="P3">
+         <tooltip>
+            <Tooltip fx:id="tpP3" text="Votar al partido 3" />
+         </tooltip></Button>
+      <Button fx:id="btnP2" layoutX="151.0" layoutY="237.0" mnemonicParsing="false" onAction="#votar" style="-fx-background-color: #ed8b8b;" text="P2">
+         <tooltip>
+            <Tooltip fx:id="tpP2" text="Votar al partido 2">
+               <font>
+                  <Font name="DIN Alternate Bold" size="13.0" />
+               </font>
+            </Tooltip>
+         </tooltip></Button>
+      <Button fx:id="btnStats" layoutX="248.0" layoutY="316.0" mnemonicParsing="false" onAction="#abrirStats" text="Ver estadísticas" />
+      <ImageView fitHeight="66.0" fitWidth="111.0" layoutX="52.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/business1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="111.0" layoutX="138.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/business2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="111.0" layoutX="224.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/business3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="111.0" layoutX="310.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/business4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="111.0" layoutX="396.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/business5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="111.0" layoutX="482.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/business6.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

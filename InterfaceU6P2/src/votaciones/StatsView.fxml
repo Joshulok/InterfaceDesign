@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votaciones.StatsViewController">
+   <children>
+      <BarChart fx:id="bcVotaciones" alternativeColumnFillVisible="true" layoutX="63.0" layoutY="32.0" prefHeight="336.0" prefWidth="474.0" title="Votos de los partidos">
+        <xAxis>
+          <CategoryAxis label="partidos" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="votos" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="btnAtras" layoutX="14.0" layoutY="368.0" mnemonicParsing="false" onAction="#salir" text="Atrás" />
+   </children>
+</AnchorPane>
