@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+   <children>
+      <Button fx:id="btnMarcha" layoutX="150.0" layoutY="300.0" mnemonicParsing="false" onAction="#marcha" text="En marcha">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="btnDestinatario" disable="true" layoutX="359.0" layoutY="300.0" mnemonicParsing="false" onAction="#destinatario" text="Hacia destinatario">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <ImageView fx:id="ivTruck" fitHeight="150.0" fitWidth="200.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/truck-fill.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSiguiente" layoutX="481.0" layoutY="360.0" mnemonicParsing="false" onAction="#siguiente" text="Siguiente Juego" />
+   </children>
+</AnchorPane>
