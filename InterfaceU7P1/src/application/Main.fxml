@@ -15,24 +15,19 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #282A36#282A36;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <MenuBar fx:id="menuBar" layoutX="-1.0" prefHeight="28.0" prefWidth="600.0" style="-fx-background-color: #CAA9FA#CAA9FA;">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="New">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem fx:id="menuItemNewContact" mnemonicParsing="false" onAction="#createContact" text="Contact" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem fx:id="meniItemAbout" mnemonicParsing="false" onAction="#aboutUs" text="About us" />
+                  <MenuItem fx:id="menuItemHowTo" mnemonicParsing="false" onAction="#howTo" text="How to" />
             </items>
           </Menu>
         </menus>
@@ -109,20 +104,7 @@
                   </Label>
                   <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #444759#444759;">
                     <items>
-                        <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#deleteContact" style="-fx-background-color: #CAA9FA#CAA9FA;" text="Delete">
-                           <font>
-                              <Font name="Hiragino Sans W3" size="13.0" />
-                           </font>
-                        </Button>
                         <Button fx:id="btnEditContact" alignment="CENTER" mnemonicParsing="false" onAction="#editContact" style="-fx-background-color: #CAA9FA#CAA9FA;" text="Edit">
-                           <font>
-                              <Font name="Hiragino Sans W3" size="13.0" />
-                           </font>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                        </Button>
-                      <Button fx:id="btnSaveContact" alignment="CENTER" contentDisplay="CENTER" depthTest="DISABLE" disable="true" mnemonicParsing="false" onAction="#saveContact" style="-fx-background-color: #CAA9FA#CAA9FA;" text="Save">
                            <font>
                               <Font name="Hiragino Sans W3" size="13.0" />
                            </font>
@@ -138,7 +120,7 @@
                         <Insets />
                      </VBox.margin>
                      <padding>
-                        <Insets left="70.0" right="50.0" />
+                        <Insets left="130.0" right="100.0" />
                      </padding>
                   </ToolBar>
                </children>
